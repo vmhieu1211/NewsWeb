@@ -3,16 +3,6 @@
     ViewData["Title"] = "News Page";
     Layout = "_Layout";
 }
-
-<style>
-    .tintuc-bar ul li {
-        text-align: center;
-        width: 185px;
-        list-style: none;
-        display: inline-block;
-        border-right: 1px double rgb(98, 101, 119);
-    }
-</style>
 <section class="" id="tintuc">
     <div class="container">
         <div class="row">
@@ -30,13 +20,13 @@
                         {
                             @foreach (var category in Model.Categories)
                             {
-                                <li class="">
-                                        <a class="" href="/Category/Details/@category">
+                                <li>
+                                        <a href="/Category/Details/@category">
                                             @category.Description
                                         </a>
                                 </li>
                              
-                            }
+                            }   
                         }
                         else
                         {
@@ -97,3 +87,4 @@
         </div>
     </div>
 </section>
+ 
