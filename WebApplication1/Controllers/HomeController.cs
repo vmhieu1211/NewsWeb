@@ -37,6 +37,7 @@ namespace WebApplication1.Controllers
             }
             var homeData = new Home
             {
+
                 News = news,
                 Categories = category,
                 Characters = characters
